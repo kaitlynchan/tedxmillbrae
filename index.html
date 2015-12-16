@@ -3,10 +3,8 @@
 <head>
   <meta charset = "utf-8">
   <title>TEDxMillbrae</title>
-  <link href='http://fonts.googleapis.com/css?family=Syncopate|Cantarell:700|Shadows+Into+Light+Two|Ubuntu|Lora' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Syncopate|Cantarell:700|Ubuntu|Lato' rel='stylesheet' type='text/css'>
   <script src='processing.min.js'></script>
- 
-  
   
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> 
  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -20,10 +18,14 @@
 
 
 body{
-    text-align:center;
-    padding: 0px;
-    margin: 0px;1
-    background-color: white
+   text-align:center;
+   padding: 0px;
+   margin: 0px;
+   background-color: white;
+   font-family: Lato;
+   font-size: 20px;
+   line-height: 150%;
+
 }
 
 ul {
@@ -42,18 +44,32 @@ li {
 
 h1 {font-family: 'Cantarell';
     font-weight: bold;
-    font-size: 95px;
-    padding-top: 200px;
+    font-size: 100px;
+    padding-top: 300px;
     margin: 0px;
-    height: 55%; 
+    height: 45%; 
     width: 100%;
-    text-align:center;
     background-position: center;
     background: linear-gradient(
-      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("http://share-fastly.picmonkey.com/prod/photo_posts/Z41sD0kmAEN_12496052.jpg");
+      rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("http://www.transitunlimited.org/images/thumb/d/d7/Millbrae-1.jpg/300px-Millbrae-1.jpg");
     background-attachment: fixed
 
+}
+
+#Videos{
+  background-position: center;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("http://7428.net/wp-content/uploads/2015/01/3d-Triangle-Geometric-Background-Design-Vector-.jpg");
+    background-attachment: fixed
+}
+#Contact{
+  background-position: center;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("http://7428.net/wp-content/uploads/2015/01/3d-Triangle-Geometric-Background-Design-Vector-.jpg");
+    background-attachment: fixed
 }
 
 a.tedlink:link, a.tedlink:visited {
@@ -91,30 +107,22 @@ a.tedlink:active, a.tedlink:hover{
   
 }
 
-p{ font-family: 'Lora';
-    font-weight: normal;
-   font-size: 20px;
-    padding: 0px;
-    margin: 0px 
+h3 {font-family: 'Ubuntu';
+  padding: 20px;
+  margin: 20px;
 
-  }
-
-h3 {font-family: 'Lora';
-  padding: 10px;
-  margin: 10px;
-
-}
-
-
-
-p.about{
-  font-family: 'Shadows Into Light Two';
-  font-size: 50px;
 }
 
 h3.title { float: left;
   display: inline-block;
 }
+
+
+p.about{
+  font-family: 'Lato';
+  font-size: 50px;
+}
+
 
 
 #share-buttons {
@@ -150,18 +158,10 @@ a.apple{
     height: 5px;
 }
 
-div.About {
-  margin: 10px;
-  padding: 10px;
-}
-
-#tedpic {
-position: inline;
-}
-
 #license{
   background-color: white;
   font-size: 14px;
+
 }
  
  #mainspeak{
@@ -189,15 +189,13 @@ width: 100%;
 margin:0 auto;
 }
 
-h2 {
-  font-family: "Ubuntu";
-}
+
 
 </STYLE>
 </head>
 
 
- <body>
+<body>
        
 
 <div data-role="page" id = "Home">
@@ -218,8 +216,8 @@ h2 {
 </ul>
 </div>
 
-<h1 class = "title" ><font color="red"><b>TEDx</font><font color="white"> Millbrae</font></b>
-<br><font color="white" size = "4"><font color="red">x</font> = independently organized TED event </font></h1>
+<h1 class = "title" ><font color="red">TEDx</font><font color="white">Millbrae</font>
+<br><br><br><font color="white" size = "4"><font color="red">x</font> = independently organized TED event </font></h1>
   <div id = "pictures" style = "float: center">
 	
 
@@ -237,10 +235,11 @@ In the spirit of ideas worth spreading, TED has created a program called TEDx. <
 </div>
 
 
-<div data-role="page" id = "Videos" style="background-color:gray">
+<div data-role="page" id = "Videos">
  <div role="main" class="ui-content">
+  <div id = "pictures" style = "float: center">
   <p class = "about"><strong style= "color:white">Talks:</strong></p>
-  <p class = "video">Videos at TEDX Millbrae!</p><br>
+  <p class = "video"  style= "color:white">Videos at TEDX Millbrae!</p><br>
 <iframe width="320" height="195" style = "padding: 15px" src="https://www.youtube.com/embed/5mV0ZmqkfKA" frameborder="0" allowfullscreen></iframe>
 <iframe width="320" height="195" style = "padding: 15px" src="https://www.youtube.com/embed/uOPh7VQ_9sE" frameborder="0" allowfullscreen></iframe>
 <iframe width="320" height="195" style = "padding: 15px" src="https://www.youtube.com/embed/M0yhHKWUa0g" frameborder="0" allowfullscreen></iframe>
@@ -249,8 +248,9 @@ In the spirit of ideas worth spreading, TED has created a program called TEDx. <
 <iframe width="320" height="195" style = "padding: 15px" src="https://www.youtube.com/embed/5mV0ZmqkfKA" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
+</div>
 
-<div data-role="page" id = "Mission" style="background-color:#9E213E">
+<div data-role="page" id = "Mission" style="background-color:black">
  <div role="main" class="ui-content"> 
   <p class= "about"><strong style = "color:white">Mission: What is TED ?</strong><br> </p>
   <p style = "color:white; margin: 0px 55px; padding: 10px" align = "justify">
@@ -263,16 +263,13 @@ For more information, visit <a class = "tedlink" id = "tedlink" style = "backgro
  <p style = "color:white">Project Manager: Adrianne Offril</p>
  <p style = "color:white">Treasurer: Julian Magdangal</p>
  <p style = "color:white">Secretary: David Lokotui</p>
-<img id= "tedpic" src="http://pb-assets.tedcdn.com/system/baubles/files/000/001/323/original/TEDEd-TopicsUnit.jpg?1405527851"  height = "200" widtth = "100" align="center"></img>
-
-
 <br>
  
  </div>
 </div>
 
 <div data-role="page" id = "Participate">
- <div role="main" class="ui-content"> <hr/>
+ <div role="main" class="ui-content">
   <p class= "about"><strong style = "color:red">Participate:</strong><br></p>
   <div id = "wrap">
 <div id="mainspeak">
@@ -292,24 +289,26 @@ For more information, visit <a class = "tedlink" id = "tedlink" style = "backgro
 </div>
 </div>
 
-<div data-role="page" id = "Contact">
- <div role="main" class="ui-content"> <hr/>
-  <p class = "about"><strong style = "color: aqua ">Contact:</strong><br> 
-  <p>For more information, please contact us at</p><br>
-  <a class = "apple" id = "apple" href="http://4.bp.blogspot.com/-dq5T7DZFBcU/VRuRUVP4XUI/AAAAAAAAAck/3Db_clJtsi0/s1600/the_panda.png" >millsteded@gmail.com </a>
-</p></div>
+<div data-role="page" id = "Contact"> 
+<div role="main" class="ui-content">
+<p class = "about"><strong style = "color: aqua">Contact:</strong><br>  
+<p style= "color:white">For more information, please contact us at</p><br>
+<a class = "apple" id = "apple" href="http://4.bp.blogspot.com/-dq5T7DZFBcU/VRuRUVP4XUI/AAAAAAAAAck/3Db_clJtsi0/s1600/the_panda.png"
+>millsteded@gmail.com </a> </p>
 </div>
-<br>
+</div> 
+
 
 <div data-role="footer" id="license" style="color:gray">
-<p>This independent TEDx event is operated under license from TED. (C) Mills TED Ed Club<script type="text/javascript">
+<p>This independent TEDx event is operated under license from TED. (C) Mills TED Ed Club <script type="text/javascript">
 var d = new Date()
 document.write(d.getFullYear())
-</script></p>
+</script>
+</p>
 
 </div>
 
-<script src="index.js"></script>
+<script src="js.js"></script>
 <a href="#" class="back-to-top">Back to Top</a>
 
 
