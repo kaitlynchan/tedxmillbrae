@@ -6,6 +6,10 @@
   <link href='http://fonts.googleapis.com/css?family=Cantarell:700|Ubuntu|Lato' rel='stylesheet' type='text/css'>
   
   <script src='processing.min.js'></script>
+
+  <link rel='stylesheet' media='all' href='normal.css' />
+<link rel='stylesheet' media='print' href='print.css' />
+<link rel='stylesheet' media='screen and (min-width: 701px)' href='medium.css' />
   
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> 
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -22,6 +26,7 @@
 
 
 body{
+  width: 100%;
    text-align:center;
    padding: 0px;
    margin: 0px;
@@ -30,6 +35,10 @@ body{
    font-size: 20px;
    line-height: 150%;
 
+}
+
+div {
+max-width: 1350px;
 }
 
 #nav{
@@ -292,7 +301,11 @@ padding: 25px
     <li><a href="#Videos">Speakers</a></li>
     <li><a href="#Attend">Attend</a></li>
     <li><a href="#Mission">Mission</a></li>
-    <li><a href="#Contact">Contact</a></li>
+    <li><a href="#Contact">Contact</a>
+    <ul>
+            <li><a href="#Sponsors">Sponsors</a></li>
+        </ul>
+    </li>
 <div id="share-buttons" style= "float: center" >
     <li><a href="https://www.facebook.com/TEDxMillsHighSchool/timeline" target="_blank">
         <img id = "fbbutton" height = "30px" width = "30px" src= "https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
@@ -301,7 +314,8 @@ padding: 25px
         <a href=" https://twitter.com/TedxMillsHS" target="_blank">
         <img height = "30px" width = "30px" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
     </li>
-    
+ 
+ </div>   
 
 </ul>
 
@@ -493,6 +507,14 @@ For more information, visit <a class = "tedlink" id = "tedlink" style = "backgro
 <p style= "color:white">For more information, please contact us at</p>
 <a class = "apple" href="http://4.bp.blogspot.com/-dq5T7DZFBcU/VRuRUVP4XUI/AAAAAAAAAck/3Db_clJtsi0/s1600/the_panda.png"
 >tedxmillshighschool@gmail.com </a> </p>
+</div>
+</div> 
+
+<div data-role="page" id = "Sponsors"> 
+<div role="main" class="ui-content">
+<p class = "about"><strong style = "color: black">Thank you to our sponsors!</strong><p> 
+  <img src="http://s8.postimg.org/pljc0fucl/rickshaw.jpg" alt="Rickshaw">
+<img src = "http://s29.postimg.org/pvc26oeqf/astreya.jpg" alt = "astreta">
 </div>
 </div> 
 
