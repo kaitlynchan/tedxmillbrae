@@ -1,9 +1,10 @@
 <!DOCTYPE.html>
 <html>
+
 <head>
   <meta charset = "utf-8">
   <title>TEDxMillsHighSchool</title>
-  <link href='http://fonts.googleapis.com/css?family=Cantarell:700|Ubuntu|Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cantarell:700|Ubuntu|Lato' rel='stylesheet' type='text/css'/>
   
   <script src='processing.min.js'></script>
 
@@ -13,13 +14,14 @@
   
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> 
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>  
 
 <script src="http://static.dudamobile.com/DM_redirect.js" type="text/javascript"></script>
 <script type="text/javascript">DM_redirect("http://mobile.dudamobile.com/site/tedxmillbrae1");</script>
+
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
 
 <STYLE TYPE="text/css">
 
@@ -36,6 +38,8 @@ body{
    line-height: 150%;
 
 }
+
+
 
 div {
 max-width: 1350px;
@@ -58,6 +62,7 @@ max-width: 1350px;
     position:relative;
     padding: 0px;
     margin: 0px;
+    width: 12.5%;
 }
 #nav a{
     display:block;
@@ -65,7 +70,7 @@ max-width: 1350px;
     padding-top: 20px;
     display: block;
     font-family: 'Ubuntu';
-    width: 168.6px;
+    width: 100%;
     color: white;
     background-color: black;
     text-align: center;
@@ -91,6 +96,7 @@ max-width: 1350px;
     list-style:none;
     position:absolute;
     left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+    width: 800%;
 }
 #nav ul li{
     padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
@@ -103,7 +109,7 @@ max-width: 1350px;
     left:0; /* Bring back on-screen when needed */
 }
 #nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
-    background:#448880;
+    background:#b20000;
  
 }
 #nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
@@ -230,6 +236,7 @@ padding-right: 20px;
 #sidebarattend {
 float:left;
 width: 40%;
+padding-left: 30px;
 }
 
 #sidebarvolunteer{
@@ -242,19 +249,6 @@ margin:0 auto;
 font-family: 'Ubuntu'; 
 font-size: 18px
 }
-
-figure {
-    width: 33%;
-    float: left;
-    margin: 0 auto;
-    text-align: center;
-}
-
-figcaption{
-font-size: 16px;
-padding: 25px
-}
-
 .post-container {
     margin: 30px 10px 30px 30px;  
     border: none;
@@ -272,10 +266,22 @@ padding: 25px
     color: white;
 
 }
+figure {
+    width: 33.33%;
+   float: left;
+    margin: 0 auto;
+    text-align: center;
+    white-space: pre-wrap;
+}
 
+figcaption{
+font-size: 16px;
+padding: 25px
+}
 
 
 </STYLE>
+
 </head>
 
 
@@ -296,16 +302,15 @@ padding: 25px
 
         <ul>
             <li><a href="#Meet">Meet the team</a></li>
+            <li><a href="#Mission">Mission</a></li>
         </ul>
     </li>
     <li><a href="#Videos">Speakers</a></li>
     <li><a href="#Attend">Attend</a></li>
-    <li><a href="#Mission">Mission</a></li>
-    <li><a href="#Contact">Contact</a>
-    <ul>
-            <li><a href="#Sponsors">Sponsors</a></li>
-        </ul>
-    </li>
+    
+    <li><a href="#Contact">Contact</a> </li>
+      <li><a href="#Sponsors">Sponsors</a></li>
+    
 <div id="share-buttons" style= "float: center" >
     <li><a href="https://www.facebook.com/TEDxMillsHighSchool/timeline" target="_blank">
         <img id = "fbbutton" height = "30px" width = "30px" src= "https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
@@ -444,7 +449,7 @@ For more information, visit <a class = "tedlink" id = "tedlink" style = "backgro
   <div id="meet_images" class = "meet_images" >
 <figure>
   <img src="http://s10.postimg.org/xiwz8v4qx/michelle.jpg" alt="Michelle Chan" width="216" height="288">
-  <figcaption align = "justify"><b>Michelle Chan - Lead Curator/Co-Organizer</b> <br>Michelle Chan is a Junior at Mills High School and loves writing, playing music, and watching murder mysteries in her spare time. She hopes to visit New York and see a Broadway musical someday.</figcaption>
+  <figcaption align = "justify"><b>Michelle Chan - Lead Curator/Co-Organizer</b> <br>Michelle Chan is a Junior at Mills High School and loves writing, playing music, and watching murder mysteries in her spare time. She hopes to visit New York and see a Broadway musical someday.<br><br><br><br></figcaption>
 </figure>
 <figure>
   <img src="http://s21.postimg.org/tb82p65tz/tiffany.jpg" alt="Tiffany Yu" width="216" height="288">
@@ -460,13 +465,11 @@ For more information, visit <a class = "tedlink" id = "tedlink" style = "backgro
 </figure>
 <figure>
   <img src="http://s9.postimg.org/aif2w6knj/sonia.jpg" alt="Sonia Fonseca" width="216" height="288">
-  <figcaption align = "justify"><b>Sonia Fonseca – Budgets Manager</b><br>Sonia is a junior and volunteers as part of clubs in Mills, such as Interact as well as outside of school such as the Leo’s club. In her spare time, she swims for Mills’ water polo and swim team. In her future, she hopes to have a career that involves math, science, or both. Lastly, Sonia is glad to be a part of Mills’ TEDx team as the budget manager. 
-</figcaption>
+  <figcaption align = "justify"><b>Sonia Fonseca – Budgets Manager</b><br>Sonia is a junior and volunteers as part of clubs in Mills, such as Interact as well as outside of school such as the Leo’s club. In her spare time, she swims for Mills’ water polo and swim team. In her future, she hopes to have a career that involves math, science, or both. Lastly, Sonia is glad to be a part of Mills’ TEDx team as the budget manager.</figcaption>
 </figure>
 <figure>
   <img src="http://s23.postimg.org/fwe9tl0az/offril.jpg" alt="Adrianne Offril" width="216" height="288">
-  <figcaption align = "justify"><b>Adrianne Offril – Marketing/Social Media Director</b> <br> Adrianne Offril is a junior and a member of the Ted-Ed Club at Mills. She enjoys swimming and practicing karate, as well as divulging into the Harry Potter series. Adrianne volunteers at the SF Food Bank and loves working with kids at summer camps. She hopes you have a great experience at the first TedxMillsHighSchool event!
-</figcaption>
+  <figcaption align = "justify"><b>Adrianne Offril – Marketing/Social Media Director</b> <br> Adrianne Offril is a junior and a member of the Ted-Ed Club at Mills. She enjoys swimming and practicing karate, as well as divulging into the Harry Potter series. Adrianne volunteers at the SF Food Bank and loves working with kids at summer camps. She hopes you have a great experience at the first TedxMillsHighSchool event!</figcaption>
 </figure>
 <figure>
   <img src="http://s8.postimg.org/mr90hgyb9/ema.jpg" alt="Ema Henry" width="216" height="288">
@@ -474,16 +477,15 @@ For more information, visit <a class = "tedlink" id = "tedlink" style = "backgro
 </figure>
 <figure>
   <img src="http://s29.postimg.org/upkx5frlj/sammi.jpg" alt="Sammi Chow" width="216" height="288">
-  <figcaption align = "justify"><b>Sammi Chow - Lead Designer</b><br> Sammi is a junior at Mills High School who enjoys watching crime shows and browsing through Pintrest. In her free time, she enjoys drawing. For the past three summers, Sammi has been a counselor for 6-7th graders at a summer day camp. 
-</figcaption>
+  <figcaption align = "justify"><b>Sammi Chow - Lead Designer</b><br> Sammi is a junior at Mills High School who enjoys watching crime shows and browsing through Pintrest. In her free time, she enjoys drawing. For the past three summers, Sammi has been a counselor for 6-7th graders at a summer day camp.<br><br><br></figcaption>
 </figure>
 <figure>
   <img src="http://s7.postimg.org/z55c7whe3/kaitlyn.jpg" alt="Cool Cat" width="216" height="288">
   <figcaption align = "justify"><b>Kaitlyn Chan - Webmaster</b><br>Kaitlyn is a sophomore at Mills and a self-taught computer programmer. She enjoys coding websites (including this one), playing the bass clarinet, and stalking the neighborhood cats. Taking part in Millbrae’s first TEDx Conference is new but fun experience for her, and hopefully many people will be inspired!</figcaption>
 </figure>
 <figure>
-  <img src="http://s2.postimg.org/proe6rx95/pusheen.png" alt="Erin McKean" width="216" height="288">
-  <figcaption align = "justify"><b>Erin McKean - Speaker Coach</b><br> Erin is a lexicographer, and works to change the way we use language. She has given 2 TED talks in the past, and works closely with the organization as well.</figcaption>
+  <img src="http://s15.postimg.org/slkf7i6uz/erin.jpg" alt="Erin McKean" width="216" height="288">
+  <figcaption align = "justify"><b>Erin McKean - Speaker Coach</b><br> Erin McKean is the founder of the newly-not-for-profit Wordnik.com, the world’s biggest online dictionary. She’s the author of the Weird and Wonderful Words books, the best-selling novel The Secret Lives of Dresses, and (most recently) The Hundred Dresses, a field guide to dresses. She blogs at dressaday.com. When you meet her, please tell her your favorite word.</figcaption>
 </figure>
 <figure>
   <img src="http://s16.postimg.org/ssnufzv91/sarah.jpg" alt="Sarah Gayer" width="216" height="288">
@@ -491,7 +493,7 @@ For more information, visit <a class = "tedlink" id = "tedlink" style = "backgro
 </figure>
 <figure>
   <img src="http://s22.postimg.org/lthllvd9d/max.jpg" alt="Max Russell" width="216" height="288">
-  <figcaption align = "justify"><b>Max Russell - Production Manager</b><br>Max Russell is looking forward to helping out in the upcoming TEDx event and is excited to see how it will turn out. He enjoys camping and practicing martial arts in his free time. Max is currently involved with Boy Scouts and spends time tutoring after school.</figcaption>
+  <figcaption align = "justify"><b>Max Russell - Production Manager</b><br>Max Russell is looking forward to helping out in the upcoming TEDx event and is excited to see how it will turn out. He enjoys camping and practicing martial arts in his free time. Max is currently involved with Boy Scouts and spends time tutoring after school.<br></figcaption>
 </figure>
 
 </div>
@@ -512,9 +514,12 @@ For more information, visit <a class = "tedlink" id = "tedlink" style = "backgro
 
 <div data-role="page" id = "Sponsors"> 
 <div role="main" class="ui-content">
-<p class = "about"><strong style = "color: black">Thank you to our sponsors!</strong><p> 
-  <img src="http://s8.postimg.org/pljc0fucl/rickshaw.jpg" alt="Rickshaw">
+  <p class = "about"><strong style = "color: black">Thank you to our sponsors!</strong><p> 
+<img src="http://s8.postimg.org/pljc0fucl/rickshaw.jpg" alt="Rickshaw">
 <img src = "http://s29.postimg.org/pvc26oeqf/astreya.jpg" alt = "astreta">
+
+  <p style= "color:gray">Interested in becoming a sponsor? Contact us at <font color="red">tedxmillshighschool@gmail.com</font>!</p>
+
 </div>
 </div> 
 
